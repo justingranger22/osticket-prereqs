@@ -22,6 +22,7 @@ This tutorial outlines the installation of the open-source help desk ticketing s
 
 
 <h2>Installation Steps</h2>
+
 ![image](https://github.com/user-attachments/assets/a9a45fd3-612e-484d-9c75-67d17495c67e)
 
 In order to install OS Ticket system, you will first need to create a VM (virtual machine). In the resource line, type in a group to put it under. You can use whatever you like. Then name the VM and create a user and password. Be sure to write this down and remember for later. Also make sure the size has at least 2 vcpus. Lastly make sure the image is Windows 10 otherwise it will not run. Finally check the licensing box at the bottom and click create. 
@@ -34,6 +35,7 @@ To use the VM you need to pull up Remote desktop and copy the public IP address 
 <br />
 
 <p>
+  
 ![image](https://github.com/user-attachments/assets/e67e6acc-5b73-4d10-944b-a2169ff9cb68)
 
 </p>
@@ -41,6 +43,7 @@ To use the VM you need to pull up Remote desktop and copy the public IP address 
 To download os ticket you will need to go to osticket.com and click the self-hosted tab on the top, then make sure you click the free version to download and choose you language. Just keep clicking next until the download starts. After that open the file that downloaded in the upper right hand corner. After that, go to control panel, click programs, uninstall programs, turn windows features on or off. Look for Internet Information Services (IIS), check the bos and click the plus icon, world wide web services, application development features, find CGI, check the box and click ok
 </p>
 <br />
+
 ![image](https://github.com/user-attachments/assets/e43434cb-ba1e-4095-818e-4980e11ea92b)
 From the os ticket folder, install both PHP manager and rewrite_amd64_en_US. Next you will need to create a new folder on the C: drive and name it PHP, once that is created go ahead and unzip or extract the php.7.3.8 folder and make sure it goes to the new folder on the C: drive, browse if you need to. Go ahead and install VC_redist.x86 and mysql, click typical, keep clicking next until you reach the root password. Make sure you use root for both (VERY IMPORTANT), click execute and finish
 
@@ -55,4 +58,4 @@ Go to C: > inetpub > wwwroot > osticket > include and scroll down and find ost-s
 
 
 ![image](https://github.com/user-attachments/assets/973158ce-ed19-4247-a8e9-546f627ffe55)
-If done correctly once you click on continue on the OsTicket site it should look like this. If so just fill in the information
+If done correctly once you click on continue on the OsTicket site it should look like this. If so just fill in the information. Remember your SQL user and password are root and you will need to create two emails, they do not need to be actual emails just type whatever you like
